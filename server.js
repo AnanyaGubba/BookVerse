@@ -18,7 +18,7 @@ let dbConnected = false;
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',          // change if using another user
-    password: '@Gubb4788', // <--- REPLACE WITH YOUR MYSQL PASSWORD
+    password: 'your_password', // <--- REPLACE WITH YOUR MYSQL PASSWORD
     database: 'book_reviews_db'
 });
 
@@ -149,3 +149,4 @@ app.delete('/reviews/:id', (req, res) => {
 app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
 });
+
